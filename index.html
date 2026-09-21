@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islam for Kids | Fun Learning</title>
+    <title>الْإِسْلَامُ لِلْأَطْفَالِ | تَعَلُّمٌ مُمْتِعٌ</title>
     
-    <!-- Kid-friendly Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Kid-friendly Arabic Google Fonts (Lalezar for headings, Cairo for body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Lalezar&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,7 +22,7 @@
         }
 
         body {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Cairo', sans-serif;
             background-color: var(--primary-bg);
             margin: 0;
             padding: 0;
@@ -31,7 +31,8 @@
         }
 
         h1, h2 {
-            font-family: 'Fredoka One', cursive;
+            font-family: 'Lalezar', cursive;
+            font-weight: normal; /* Lalezar is naturally bold */
         }
 
         /* Header Styles */
@@ -50,7 +51,7 @@
         }
 
         .header p {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             color: #15803d;
             font-weight: 700;
             margin-top: 10px;
@@ -99,15 +100,16 @@
 
         .card h2 {
             margin: 0 0 15px 0;
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: #1f2937;
         }
 
         .card p {
-            font-size: 1.1rem;
-            line-height: 1.6;
+            font-size: 1.2rem;
+            line-height: 1.8;
             margin-bottom: 30px;
             flex-grow: 1;
+            font-weight: 700;
         }
 
         /* Buttons */
@@ -117,7 +119,7 @@
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             color: white;
             transition: all 0.2s;
             width: 70%;
@@ -152,6 +154,7 @@
             background: #166534;
             color: white;
             margin-top: 40px;
+            font-size: 1.2rem;
             font-weight: bold;
         }
         
@@ -165,8 +168,8 @@
 
     <!-- Header Section -->
     <header class="header">
-        <h1>🌙 Islam for Kids ✨</h1>
-        <p>Learning about our beautiful Deen is fun and easy!</p>
+        <h1>🌙 الْإِسْلَامُ لِلْأَطْفَالِ ✨</h1>
+        <p>تَعَلُّمُ دِينِنَا الْجَمِيلِ مُمْتِعٌ وَسَهْلٌ!</p>
     </header>
 
     <!-- Main Content Section -->
@@ -175,32 +178,32 @@
         <!-- Tajweed Card -->
         <div class="card card-tajweed">
             <div class="icon"><i class="fas fa-book-open"></i></div>
-            <h2>Tajweed Rules</h2>
-            <p>Learn how to recite the Holy Quran beautifully and correctly with our interactive lessons for kids.</p>
-            <a href="https://yekoshy.github.io/Tajweed_kids/" class="btn btn-tajweed" target="_blank">Start Reading</a>
+            <h2>أَحْكَامُ التَّجْوِيدِ</h2>
+            <p>تَعَلَّمْ كَيْفِيَّةَ تِلَاوَةِ الْقُرْآنِ الْكَرِيمِ بِشَكْلٍ جَمِيلٍ وَصَحِيحٍ مَعَ دُرُوسِنَا التَّفَاعُلِيَّةِ لِلْأَطْفَالِ.</p>
+            <a href="https://yekoshy.github.io/Tajweed_kids/" class="btn btn-tajweed" target="_blank">اِبْدَأِ الْقِرَاءَةَ</a>
         </div>
 
         <!-- Sirah Quizzes Card -->
         <div class="card card-sirah">
             <div class="icon"><i class="fas fa-star-and-crescent"></i></div>
-            <h2>Sirah Quizzes</h2>
-            <p>Test your knowledge about the amazing life and stories of Prophet Muhammad (peace be upon him).</p>
-            <a href="https://yekoshy.github.io/SirahQuizzes/" class="btn btn-sirah" target="_blank">Play Quiz</a>
+            <h2>اِخْتِبَارَاتُ السِّيرَةِ</h2>
+            <p>اِخْتَبِرْ مَعْلُومَاتِكَ عَنْ حَيَاةِ وَقِصَصِ النَّبِيِّ مُحَمَّدٍ (صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ) الرَّائِعَةِ.</p>
+            <a href="https://yekoshy.github.io/SirahQuizzes/" class="btn btn-sirah" target="_blank">اِبْدَأِ الِاخْتِبَارَ</a>
         </div>
 
         <!-- Quran Quizzes Card -->
         <div class="card card-quran">
             <div class="icon"><i class="fas fa-quran"></i></div>
-            <h2>Quran Quizzes</h2>
-            <p>How well do you know the Surahs? Play these fun quizzes to test your memory and learn more!</p>
-            <a href="https://yekoshy.github.io/QuranQuizzes/" class="btn btn-quran" target="_blank">Play Quiz</a>
+            <h2>اِخْتِبَارَاتُ الْقُرْآنِ</h2>
+            <p>مَا مَدَى مَعْرِفَتِكَ بِالسُّوَرِ؟ اِلْعَبْ هَذِهِ الِاخْتِبَارَاتِ الْمُمْتِعَةَ لِتَخْتَبِرَ ذَاكِرَتَكَ وَتَتَعَلَّمَ الْمَزِيدَ!</p>
+            <a href="https://yekoshy.github.io/QuranQuizzes/" class="btn btn-quran" target="_blank">اِبْدَأِ الِاخْتِبَارَ</a>
         </div>
 
     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <p>Made with ❤️ to simplify Islam for kids.</p>
+        <p>صُنِعَ بِـ ❤️ لِتَبْسِيطِ الْإِسْلَامِ لِلْأَطْفَالِ.</p>
     </footer>
 
 </body>

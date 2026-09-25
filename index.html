@@ -19,6 +19,7 @@
             --tajweed-color: #3b82f6; /* Blue */
             --sirah-color: #f59e0b;   /* Orange */
             --quran-color: #10b981;   /* Green */
+            --sahaba-color: #8b5cf6;  /* Purple */
         }
 
         body {
@@ -88,6 +89,7 @@
         .card-tajweed { border-color: var(--tajweed-color); }
         .card-sirah { border-color: var(--sirah-color); }
         .card-quran { border-color: var(--quran-color); }
+        .card-sahaba { border-color: var(--sahaba-color); }
 
         .icon {
             font-size: 4.5rem;
@@ -97,6 +99,7 @@
         .card-tajweed .icon { color: var(--tajweed-color); }
         .card-sirah .icon { color: var(--sirah-color); }
         .card-quran .icon { color: var(--quran-color); }
+        .card-sahaba .icon { color: var(--sahaba-color); }
 
         .card h2 {
             margin: 0 0 15px 0;
@@ -148,6 +151,12 @@
         }
         .btn-quran:hover { background: #059669; }
 
+        .btn-sahaba {
+            background: var(--sahaba-color);
+            box-shadow: 0 6px 0 #6d28d9;
+        }
+        .btn-sahaba:hover { background: #6d28d9; }
+
         /* Footer */
         .footer {
             padding: 25px;
@@ -197,6 +206,14 @@
             <h2>اِخْتِبَارَاتُ الْقُرْآنِ</h2>
             <p>مَا مَدَى مَعْرِفَتِكَ بِالسُّوَرِ؟ اِلْعَبْ هَذِهِ الِاخْتِبَارَاتِ الْمُمْتِعَةَ لِتَخْتَبِرَ ذَاكِرَتَكَ وَتَتَعَلَّمَ الْمَزِيدَ!</p>
             <a href="https://yekoshy.github.io/QuranQuizzes/" class="btn btn-quran" target="_blank">اِبْدَأِ الِاخْتِبَارَ</a>
+        </div>
+
+        <!-- Sahaba Quizzes Card -->
+        <div class="card card-sahaba">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <h2>اِخْتِبَارَاتُ الصَّحَابَةِ</h2>
+            <p>تَعَرَّفْ عَلَى شَخْصِيَّاتِ وَقِصَصِ الصَّحَابَةِ الْكِرَامِ (رَضِيَ اللَّهُ عَنْهُمْ) بِطَرِيقَةٍ مُمْتِعَةٍ.</p>
+            <a href="https://yekoshy.github.io/SahabaQuizzes/" class="btn btn-sahaba" target="_blank">اِبْدَأِ الِاخْتِبَارَ</a>
         </div>
 
     </main>

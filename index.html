@@ -8,18 +8,15 @@
     <!-- Kid-friendly Arabic Google Fonts (Lalezar for headings, Cairo for body) -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Lalezar&display=swap" rel="stylesheet">
     
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
         :root {
             --primary-bg: #f0fdf4; /* Soft Mint Green */
-            --header-bg: #bbf7d0;
             --text-main: #333;
             --tajweed-color: #3b82f6; /* Blue */
             --sirah-color: #f59e0b;   /* Orange */
             --quran-color: #10b981;   /* Green */
             --sahaba-color: #8b5cf6;  /* Purple */
+            --anbiyaa-color: #ef4444; /* Red */
         }
 
         body {
@@ -36,19 +33,15 @@
             font-weight: normal; /* Lalezar is naturally bold */
         }
 
-        /* Header Styles */
+        /* Header Styles (Banner styles removed) */
         .header {
-            background: var(--header-bg);
-            padding: 50px 20px;
-            border-bottom: 8px dashed #22c55e;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 50px 20px 20px;
         }
 
         .header h1 {
             font-size: 3.5rem;
             color: #166534;
             margin: 0;
-            text-shadow: 2px 2px 0px rgba(255,255,255,0.7);
         }
 
         .header p {
@@ -61,7 +54,7 @@
         /* Card Container Grid */
         .container {
             max-width: 1100px;
-            margin: 50px auto;
+            margin: 30px auto 50px;
             padding: 0 20px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -90,16 +83,7 @@
         .card-sirah { border-color: var(--sirah-color); }
         .card-quran { border-color: var(--quran-color); }
         .card-sahaba { border-color: var(--sahaba-color); }
-
-        .icon {
-            font-size: 4.5rem;
-            margin-bottom: 20px;
-        }
-
-        .card-tajweed .icon { color: var(--tajweed-color); }
-        .card-sirah .icon { color: var(--sirah-color); }
-        .card-quran .icon { color: var(--quran-color); }
-        .card-sahaba .icon { color: var(--sahaba-color); }
+        .card-anbiyaa { border-color: var(--anbiyaa-color); }
 
         .card h2 {
             margin: 0 0 15px 0;
@@ -157,6 +141,12 @@
         }
         .btn-sahaba:hover { background: #6d28d9; }
 
+        .btn-anbiyaa {
+            background: var(--anbiyaa-color);
+            box-shadow: 0 6px 0 #b91c1c;
+        }
+        .btn-anbiyaa:hover { background: #b91c1c; }
+
         /* Footer */
         .footer {
             padding: 25px;
@@ -177,7 +167,7 @@
 
     <!-- Header Section -->
     <header class="header">
-        <h1>🌙 الْإِسْلَامُ لِلْأَطْفَالِ ✨</h1>
+        <h1>الْإِسْلَامُ لِلْأَطْفَالِ</h1>
         <p>تَعَلُّمُ دِينِنَا الْجَمِيلِ مُمْتِعٌ وَسَهْلٌ!</p>
     </header>
 
@@ -186,7 +176,6 @@
         
         <!-- Tajweed Card -->
         <div class="card card-tajweed">
-            <div class="icon"><i class="fas fa-book-open"></i></div>
             <h2>أَحْكَامُ التَّجْوِيدِ</h2>
             <p>تَعَلَّمْ كَيْفِيَّةَ تِلَاوَةِ الْقُرْآنِ الْكَرِيمِ بِشَكْلٍ جَمِيلٍ وَصَحِيحٍ مَعَ دُرُوسِنَا التَّفَاعُلِيَّةِ لِلْأَطْفَالِ.</p>
             <a href="https://yekoshy.github.io/Tajweed_kids/" class="btn btn-tajweed" target="_blank">اِبْدَأِ الْقِرَاءَةَ</a>
@@ -194,7 +183,6 @@
 
         <!-- Sirah Quizzes Card -->
         <div class="card card-sirah">
-            <div class="icon"><i class="fas fa-star-and-crescent"></i></div>
             <h2>اِخْتِبَارَاتُ السِّيرَةِ</h2>
             <p>اِخْتَبِرْ مَعْلُومَاتِكَ عَنْ حَيَاةِ وَقِصَصِ النَّبِيِّ مُحَمَّدٍ (صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ) الرَّائِعَةِ.</p>
             <a href="https://yekoshy.github.io/SirahQuizzes/" class="btn btn-sirah" target="_blank">اِبْدَأِ الِاخْتِبَارَ</a>
@@ -202,7 +190,6 @@
 
         <!-- Quran Quizzes Card -->
         <div class="card card-quran">
-            <div class="icon"><i class="fas fa-quran"></i></div>
             <h2>اِخْتِبَارَاتُ الْقُرْآنِ</h2>
             <p>مَا مَدَى مَعْرِفَتِكَ بِالسُّوَرِ؟ اِلْعَبْ هَذِهِ الِاخْتِبَارَاتِ الْمُمْتِعَةَ لِتَخْتَبِرَ ذَاكِرَتَكَ وَتَتَعَلَّمَ الْمَزِيدَ!</p>
             <a href="https://yekoshy.github.io/QuranQuizzes/" class="btn btn-quran" target="_blank">اِبْدَأِ الِاخْتِبَارَ</a>
@@ -210,17 +197,23 @@
 
         <!-- Sahaba Quizzes Card -->
         <div class="card card-sahaba">
-            <div class="icon"><i class="fas fa-users"></i></div>
             <h2>اِخْتِبَارَاتُ الصَّحَابَةِ</h2>
             <p>تَعَرَّفْ عَلَى شَخْصِيَّاتِ وَقِصَصِ الصَّحَابَةِ الْكِرَامِ (رَضِيَ اللَّهُ عَنْهُمْ) بِطَرِيقَةٍ مُمْتِعَةٍ.</p>
             <a href="https://yekoshy.github.io/SahabaQuizzes/" class="btn btn-sahaba" target="_blank">اِبْدَأِ الِاخْتِبَارَ</a>
+        </div>
+
+        <!-- Anbiyaa Quizzes Card (New) -->
+        <div class="card card-anbiyaa">
+            <h2>اِخْتِبَارَاتُ الْأَنْبِيَاءِ</h2>
+            <p>تَعَرَّفْ عَلَى قِصَصِ الْأَنْبِيَاءِ (عَلَيْهِمُ السَّلَامُ) مِنْ خِلَالِ هَذِهِ الِاخْتِبَارَاتِ الْمُمْتِعَةِ.</p>
+            <a href="https://yekoshy.github.io/AnbiyaaQuizzes/" class="btn btn-anbiyaa" target="_blank">اِبْدَأِ الِاخْتِبَارَ</a>
         </div>
 
     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <p>صُنِعَ بِـ ❤️ لِتَبْسِيطِ الْإِسْلَامِ لِلْأَطْفَالِ.</p>
+        <p>صُنِعَ لِتَبْسِيطِ الْإِسْلَامِ لِلْأَطْفَالِ.</p>
     </footer>
 
 </body>
